@@ -1,0 +1,239 @@
+:root {
+    --primary-color: #007bff;
+    --primary-hover: #0056b3;
+    --danger-color: #dc3545;
+    --danger-hover: #c82333;
+    --text-color: #333;
+    --text-secondary: #555;
+    --text-muted: #666;
+    --background-color: #f9f9f9;
+    --border-color: #ccc;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Global styles for headings */
+h1, h2 {
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Add focus styles for accessibility */
+button:focus {
+    outline: 2px solid var(--primary-hover);
+}
+
+/* Input fields and selects */
+.input,
+.select,
+.textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    font-size: 16px;
+    width: 100%;
+    transition: var(--transition);
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 4px var(--primary-color);
+}
+
+/* Textarea specific styles */
+.textarea {
+    height: 100px;
+}
+
+/* Links */
+.link {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.link:hover,
+.link:focus {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+/* Error messages */
+.error-message {
+    color: var(--danger-color);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Page container */
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Page title */
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* Form container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form fields */
+.form-field {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+/* Blog items */
+.blog-item {
+    border: 1px solid var(--border-color);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.blog-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.blog-category {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.blog-content {
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.blog-image {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Blog actions */
+.blog-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.delete-button {
+    background-color: var(--danger-color);
+}
+
+.delete-button:hover {
+    background-color: var(--danger-hover);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Text links (e.g., Register link) */
+.text-link {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+a
+.text-link .link {
+    color: var(--primary-color);
+}
+
+.text-link .link:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+.logout-button  {
+    float: right;
+    margin-bottom: 10px;
+}
+  .login-button{
+    float: right;
+    margin-bottom: 10px;
+}
